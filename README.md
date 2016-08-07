@@ -18,6 +18,7 @@ https://docs.microsoft.com/zh-cn/dotnet/articles/core/index
 #Docker 
 ## Wiki:
 * https://yeasy.gitbooks.io/docker_practice/content/dockerfile/index.html
+
 ## Commands:
 * docker images
 * docker ps
@@ -27,7 +28,7 @@ https://docs.microsoft.com/zh-cn/dotnet/articles/core/index
         * docker run -it ubuntu bash
         * docker run -d -p 80:80 --name webserver nginx
 * docker build -t [imagename] .
->imagename should be lowercase!!!
+> imagename should be lowercase!!!
     * Samples:
         * docker build -t webapiframe .
 * docker tag [imageid] [dockeraccount]/[imagename]:[version]
