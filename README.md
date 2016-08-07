@@ -15,10 +15,10 @@ https://docs.microsoft.com/zh-cn/dotnet/articles/core/index
 * dotnet restore
 
 ***
-#Docker wiki:
+#Docker 
+## Wiki:
 * https://yeasy.gitbooks.io/docker_practice/content/dockerfile/index.html
-
-#Docker Commands:
+## Commands:
 * docker images
 * docker ps
 * docker run [imagename]
@@ -26,21 +26,17 @@ https://docs.microsoft.com/zh-cn/dotnet/articles/core/index
         * docker run hello-world
         * docker run -it ubuntu bash
         * docker run -d -p 80:80 --name webserver nginx
-
 * docker build -t [imagename] .
-//imagename should be lowercase!!!
+>imagename should be lowercase!!!
     * Samples:
         * docker build -t webapiframe .
 * docker tag [imageid] [dockeraccount]/[imagename]:[version]
     * Samples:
         * docker tag 7d9495d03763 pc45025/webapiframe:latest
-
 * docker login --username=[dockeraccount] --email=[dockeraccount_mail]
-
 * docker push [dockeraccount]/[imagename]
     * Samples: 
         * docker push pc45025/webapiframe
-
 * docker rmi -f [imageid]|[imagename]
     * Samples:
         * docker rmi -f 7d9495d03763
